@@ -42,6 +42,16 @@ angular.module('songfinder', ['spotify'])
     		// Update search results
     		$scope.searchTrack();
 		};
+		
+		$scope.removeAllTracks = function() {
+			$scope.selected_tracks = [];
+			$scope.searchTrack();
+		}
+		
+		$scope.addAllTracks = function() {
+			$scope.selected_tracks = $scope.search_results;
+			$scope.searchTrack();
+		}
 	}]);
 			
 			
