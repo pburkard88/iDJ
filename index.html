@@ -73,7 +73,8 @@ $ git checkout gh-pages
 
 <div ng-controller="SearchController">
 	<div>
-		<span>Selected Tracks</span>
+		<h2>Selected Tracks</h2>
+		Sort By:
 		<select ng-model="orderProp">
   			<option value="name">Track</option>
   			<option value="artists[0].name">Artist</option>
@@ -110,7 +111,7 @@ $ git checkout gh-pages
 	</div>
 
 	<div>
-		<span>Search for Tracks</span>
+		<h2>Search for Tracks</h2>
 		<input type="text" ng-model="search_term" ng-change="searchTrack()" class="search-query" id="tracks_search" placeholder="Search Tracks...">   
 		<table>
 			<thead>
